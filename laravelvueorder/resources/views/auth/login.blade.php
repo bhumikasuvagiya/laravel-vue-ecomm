@@ -8,11 +8,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bookingsystem">
-    <meta name="author" content="Bookingsystem">
+    <meta name="description" content="kgkrunch">
+    <meta name="author" content="kgkrunch">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="{{ asset('assets/img/favicon/mcg-logo.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon/mcg-logo.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/favicon.ico') }}" />
 
     <title>Sign In - Dev Hub</title>
 
@@ -43,8 +43,8 @@ if (isset($_COOKIE['email']) && isset($_COOKIE['password'])) {
     $password = $_COOKIE['password'];
     $isremembered = 'checked';
 } else {
-    $email = '';
-    $password = '';
+    $email = 'whitechef@gmail.com';
+    $password = 'whitechef';
     $isremembered = '';
 }
 @endphp

@@ -44,10 +44,13 @@
         <!-- Product Section Begin -->
     
         <section class="product spad">
-    
             <div class="container">
     
                 <div class="row">
+    <div class="col-lg-3 col-md-5"></div>
+        <div class="col-lg-9 col-md-7 sidebar__items">
+           <h4>Sell Off</h4> 
+        </div>
     
                     <div class="col-lg-3 col-md-5">
     

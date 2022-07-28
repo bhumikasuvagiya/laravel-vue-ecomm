@@ -12,6 +12,7 @@
                 backgroundImage: `url('${'assets/images/sea-buckthorn.jpg'}')`,
               }"
             >
+            <img src="" alt="">
               <div class="hero__text shop_now_banner_text">
 
                 <span> Healthy Food</span>

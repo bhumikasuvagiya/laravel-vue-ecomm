@@ -271,7 +271,8 @@
      margin-bottom: 0;
 }
 .subcategory_view_main .subcat_title .sidebar__items h4,  
-.category_product_view_main .subcat_title .sidebar__items h4  
+.category_product_view_main .subcat_title .sidebar__items h4,
+.shop_view_main .sidebar__items h4  
 {
     font-size: 35px;
     color: #1c1c1c;
@@ -616,3 +617,4 @@ a.font-weight-100.category_title:hover {
 {
     color: #7fad39;
 }
+
