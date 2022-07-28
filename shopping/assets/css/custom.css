@@ -31,9 +31,16 @@
 }
 .header_view_main .hero__categories ul li a {
     line-height: 46px;
+    transition: 0.3s;
 }
 .header_view_main .hero__categories ul li a:hover {
-    text-decoration: revert;
+    /* text-decoration: revert; */
+    font-size:19px;
+    font-weight: bold;
+    color: #7fad39;
+}
+.header_view_main .hero__categories ul li a:focus {
+    color: black;
 }
 
 /* IndexView page  */
@@ -529,7 +536,7 @@
     border: 3px solid whitesmoke;
 }
 .index_view_main .featured__item__text a.link.link-hover:hover {
-    font-size: 21px;
+    font-size: 19px;
 }
 
 .index_view_main .featured__itema {
@@ -539,6 +546,15 @@
 .category_product_view_main a.category_subcategiry_titles:hover {
     font-size: 18px;
 }
+.filter__sort .div.nice-select.sort-by-drop-down{
+    display:none;
+}
+.sort-by-drop-down{
+    display:block !important;
+}
+.nice-select.sort-by-drop-down {
+    display: none !important;
+}
 /* All pages */
 h5.font-weight-100.all_products a:hover {
     font-size: 20px;
@@ -546,11 +562,57 @@ h5.font-weight-100.all_products a:hover {
 
 a.font-weight-100.category_title:hover {
     font-size: 20px;
+   
 }
 
-.sidebar__item ul li a:hover {
+.category_product_view_main .sidebar__item ul li a:hover,
+.subcategory_view_main .sidebar__item ul li a:hover,
+.shop_view_main .sidebar__item ul li a:hover
+{
     font-size: 18px;
+    color:#7fad39;
+    font-weight:bold;
 }
-.sidebar__item ul li a {
+.category_product_view_main .sidebar__item ul li a:focus,
+.subcategory_view_main .sidebar__item ul li a:focus,
+.shop_view_main .sidebar__item ul li a:focus
+{
+    color:black;;
+}
+.category_product_view_main .sidebar__item ul li a,
+.subcategory_view_main .sidebar__item ul li a,
+.shop_view_main .sidebar__item ul li a
+
+{
     transition: 0.2s;
+}
+
+
+.category_product_view_main select.sort-by-drop-down:hover,
+.shop_view_main select.sort-by-drop-down:hover, 
+.subcategory_view_main select.sort-by-drop-down:hover 
+{
+    cursor: pointer !important;
+    border: 1px solid white;
+}
+
+.category_product_view_main select.sort-by-drop-down:focus, 
+.shop_view_main select.sort-by-drop-down:focus, 
+.subcategory_view_main select.sort-by-drop-down:focus 
+{
+    /* color: red; */
+    border: 1px solid white;
+}
+.product__item a.link.link-hover,
+.subcategory_view_main a.link.link-hover,
+.shop_view_main a.link.link-hover
+{
+    transition: 0.3s;
+}
+
+.product__item a.link.link-hover:hover,
+.subcategory_view_main a.link.link-hover:hover,
+.shop_view_main a.link.link-hover:hover
+{
+    color: #7fad39;
 }

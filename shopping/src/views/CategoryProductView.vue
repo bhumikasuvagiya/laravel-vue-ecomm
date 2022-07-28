@@ -104,7 +104,7 @@
                         </div>
                         </div>
                         <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-6" v-if="productList.length" v-for="product in productList" :key="product.product_id">
+                                <div class="col-lg-3 col-md-6 col-sm-6" v-if="productList.length" v-for="product in productList" :key="product.product_id">
                                         <div class="product__item">
                                             <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
                                              <img :src="getImageUrl(product.product_image)" alt="" class="product__item__pic set-bg">

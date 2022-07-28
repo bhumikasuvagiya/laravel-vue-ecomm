@@ -95,7 +95,7 @@
                 >View All</router-link
               ><a href="" class="show_all"></a> -->
             </div>
-            <Carousel :items-to-show="4.5" :wrap-around="true" :autoplay="3000">
+            <Carousel :items-to-show="4.5" :wrap-around="true" :autoplay="off">
               <slide
                 v-for="category in categories"
                 :key="category.category_id"
