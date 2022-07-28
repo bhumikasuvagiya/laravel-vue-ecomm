@@ -26,11 +26,10 @@ unzip uploads.zip in a laravel  public\ folder
 Then Create Your own **.env** file there is **.env.example** for reference
 
 - Change .ENV configurations
-        - DB_DATABASE = YOUR_DATABSE_NAME
-        - APP_URL = LOCALHOST_URL
 - cd laravelvueorder
 - php artisan serve
 
+Browse to `http://127.0.0.1:8000`
 
 ## Config Vue.js/ Vite project
 
@@ -61,6 +60,7 @@ Run the app
 npm run dev 
 
 ```
+configure `http://127.0.0.1:8000 ` in shopping\.env file
 
 Browse to `localhost:3000`
 
