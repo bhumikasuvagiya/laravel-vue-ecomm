@@ -27,7 +27,7 @@ Then Create Your own **.env** file there is **.env.example** for reference
 
 - Change .ENV configurations
 - cd laravelvueorder
-- php artisan serve
+> run `php artisan serve`
 
 Browse to `http://127.0.0.1:8000`
 
@@ -60,7 +60,7 @@ Run the app
 npm run dev 
 
 ```
-configure `http://127.0.0.1:8000 ` in shopping\.env file
+configure `http://127.0.0.1:8000 ` in shopping/.env file
 
 Browse to `localhost:3000`
 
