@@ -196,7 +196,6 @@ class FrontendApisController extends Controller
     public function myaccount( Request $request , $user_id = null)
     {
         $request->validate([
-            'name' => 'required',
             'email' => 'required',
             'password' => 'required',
         ]);
@@ -205,7 +204,8 @@ class FrontendApisController extends Controller
             $user = User::find($user_id);
         }
 
-        $user->name = $request['name'];
+        $user->first_name = $request['first_name'];
+        $user->last_name = $request['last_name'];
         $user->password = $hashed;
         $user->email = $request['email'];
         $user->save();

@@ -40,11 +40,26 @@
     
                         <div class="col-lg-6 col-md-6">
     
-                            <div :class="{ error: v$.name.$errors.length }">
+                            <div :class="{ error: v$.first_name.$errors.length }">
     
-                                <input v-model="data.name" placeholder="Name">
+                                <input v-model="data.first_name" placeholder="First Name">
     
-                                <div class="input-errors" v-for="error of v$.name.$errors" :key="error.$uid">
+                                <div class="input-errors" v-for="error of v$.first_name.$errors" :key="error.$uid">
+    
+                                    <div class="error-msg">{{ error.$message }}</div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+    
+                            <div :class="{ error: v$.last_name.$errors.length }">
+    
+                                <input v-model="data.last_name" placeholder="Last Name">
+    
+                                <div class="input-errors" v-for="error of v$.last_name.$errors" :key="error.$uid">
     
                                     <div class="error-msg">{{ error.$message }}</div>
     
@@ -71,7 +86,7 @@
                         </div>
                         <!-- <input type="checkbox" :id="poid" class="unchecked" name="single_select" ref="rolesSelected"> -->
     
-                        <div class="col-lg-12 col-md-6">
+                        <div class="col-lg-6 col-md-6">
                             <div :class="{ error: v$.password.$errors.length }">
                                 <input type="password" placeholder="Password" v-model="data.password">
                                 <div class="input-errors" v-for="error of v$.password.$errors" :key="error.$uid">
@@ -155,13 +170,15 @@ export default {
         // const name = ref('')
        const user = JSON.parse(localStorage.getItem('userData'));
         const data = reactive({
-            name: user.first_name,
+            first_name: user.first_name,
+            last_name: user.last_name,
             email: user.email,
             password: user.password,
         });
 
         const rules = {
-            name: { required }, // Matches data.firstName
+            first_name: { required }, // Matches data.firstName
+            last_name: { required }, // Matches data.firstName
             email: { required, email }, // Matches data.lastName
             password: { required, minLength: minLength(6) }, // Matches data.lastName
         }
