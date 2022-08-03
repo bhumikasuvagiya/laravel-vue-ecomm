@@ -618,3 +618,18 @@ a.font-weight-100.category_title:hover {
     color: #7fad39;
 }
 
+.pagination {
+    padding-left: 330px;
+}
+ul.pagination li a {
+    background-color: #fff;
+    color: #6c6e67;
+}
+ul.pagination li.active.page-item a {
+    background-color: #7fad39;
+    border: 1px solid #7fad39;
+    color: #fff;
+}
+.page-item.disabled .page-link {
+    display: none;
+}

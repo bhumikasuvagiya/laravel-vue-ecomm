@@ -9,12 +9,14 @@ export interface Product {
   description: string;
   // category: string;
   product_image: string;
+  
 }
 
 interface ProductState {
   items: Record<string, Product>;
   ids: number[];
   sortBykey: string,
+  page : number,
 }
 
 export const useProductStore = defineStore({
@@ -24,6 +26,7 @@ export const useProductStore = defineStore({
     items: {},
     ids: [],
     sortBykey: '',
+    page : 0,
   }),
 
   getters: {
@@ -42,10 +45,19 @@ export const useProductStore = defineStore({
 
   actions: {
     async fetchAll() {
-      if (this.loaded) return;
+      // alert(page); 
+      // this.page  = page;
+      // // console.log();
+      
+      // if(!page){
+      //   this.page = 1;
+      // }
+      // if (this.loaded) return;
 
       const res = await fetch(`${fakeStoreUrl}/products`);
       const data: Product[] = await res.json();
+      // console.log(data);
+      
       this.ids = data.map((product) => {
         this.items[product.product_id] = product;
         return product.product_id;
