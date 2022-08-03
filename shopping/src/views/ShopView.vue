@@ -62,7 +62,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-4">
                   <div class="filter__found">
-                    <h6>Showing <span>{{ pageProductShow }}</span> of <span> {{ total }} </span> Products found</h6>
+                    <h6>Showing <span>{{ pageProductShow }}</span> of <span> {{ total }} </span> Products</h6>
                   </div>
                 </div>
               </div>
@@ -154,7 +154,7 @@ export default {
         page = 1;
       }
       axios
-        .get(`http://127.0.0.1:8000/api/products?page=${page}`)
+        .get(`${import.meta.env.VITE_SERVER_URL}/product-page?page=${page}`)
         .then((response) => {
           // console.log("cat",response);
           category.value = response.data.data;

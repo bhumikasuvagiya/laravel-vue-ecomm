@@ -24,6 +24,7 @@ Route::post('/users', [FrontendApisController::class, 'store_user'])->name('stor
 Route::post('/myaccount/{id}', [FrontendApisController::class, 'myaccount'])->name('myaccount');
 Route::post('/login', [FrontendApisController::class, 'login'])->name('login');
 Route::get('/products', [FrontendApisController::class, 'get_products_api'])->name('get_products_api');
+Route::get('/product-page', [FrontendApisController::class, 'get_page_products'])->name('get_page_products');
 Route::get('/category/{id}', [FrontendApisController::class, 'get_subcategory'])->name('get_subcategory');
 Route::get('/subcategory/{id}', [FrontendApisController::class, 'get_products_by_subcat'])->name('get_products_by_subcat');
 Route::get('/subcategory-data/{id}', [FrontendApisController::class, 'get_single_subcategory'])->name('get_single_subcategory');

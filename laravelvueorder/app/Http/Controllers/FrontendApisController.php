@@ -22,6 +22,10 @@ class FrontendApisController extends Controller
  
 	public function get_products_api()
 	{
+		return Product::get(); 
+	}
+	public function get_page_products()
+	{
 		return Product::paginate(10); 
 	}
 	
