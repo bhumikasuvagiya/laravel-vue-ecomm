@@ -156,15 +156,13 @@ export default {
       axios
         .get(`${import.meta.env.VITE_SERVER_URL}/product-page?page=${page}`)
         .then((response) => {
-          // console.log("cat",response);
           category.value = response.data.data;
           currentPage.value = response.data.current_page;
           perPage.value = response.data.per_page;
           total.value = response.data.total;
           pageProductShow.value = response.data.data.length;
-        //   console.log(response.data.data.length);
           pageCount.value = Math.ceil(
-            response.data.total / response.data.per_page
+        response.data.total / response.data.per_page
           );
         });
     };

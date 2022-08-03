@@ -155,7 +155,7 @@
                         edit_path = edit_path.replace(':id', id);
                         view_btn = '<a  href="javascript:void(0)" class="btn btn-primary text-light" onclick="order_details_form_popup('+ id +')"><i class="fa fa-eye" aria-hidden="true"></i> View</a> ';
                         delete_btn = '<a href="javascript:void(0);" class="btn btn-danger width-sm waves-effect waves-light" title="Delete" onClick="return del_product('+ id +')"><i class="fas fa-trash-alt"></i> Delete </a>';
-                        act_html =  '&nbsp;' + view_btn + '&nbsp;' + delete_btn;
+                        act_html =  '&nbsp;' + view_btn;
 
                         return act_html;
                     }                    
