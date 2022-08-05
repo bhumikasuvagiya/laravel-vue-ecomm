@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Dev Hub">
-    <meta name="author" content="Dev Hub">
+    <meta name="description" content="KgKrunch">
+    <meta name="author" content="KgKrunch">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">

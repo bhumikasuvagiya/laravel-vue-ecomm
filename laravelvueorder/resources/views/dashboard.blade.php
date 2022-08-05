@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title','Dev Hub')
+@section('title','KgKrunch Shop')
 @section('content') 
     <div class="content-page">
         <div class="content">
@@ -31,7 +31,7 @@
                                         <div class="col-sm-6 col-xl-12">
                                             <div class="p-2 text-center">
                                             <h1>
-                                                Welcome To Ogami
+                                                Welcome To KgKrunch
                                             </h1> 
                                             </div>
                                         </div>

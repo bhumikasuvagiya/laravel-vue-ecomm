@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title','Dev Hub - Sub Category List') 
+@section('title','KgKrunch - Sub Category List') 
 @section('content') 
 <div class="wrapper">
     <div class="main">

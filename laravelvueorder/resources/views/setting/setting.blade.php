@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title', 'Ogami - Setting')
+@section('title', 'KgKrunch - Setting')
 @section('content')
 
 

@@ -26,7 +26,7 @@ class FrontendApisController extends Controller
 	}
 	public function get_page_products()
 	{
-		return Product::paginate(10); 
+		return Product::paginate(12); 
 	}
 	
 	public function get_all_subcategories()
